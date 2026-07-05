@@ -4,6 +4,8 @@ const postContent = document.getElementById('postContent');
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 
+const BASE = document.querySelector('base')?.href ?? (location.origin + location.pathname.replace(/\/[^/]*$/, '/'));
+
 let posts = [];
 
 function initTheme() {
@@ -67,7 +69,7 @@ function renderPostList() {
 
 async function renderPost(file) {
   try {
-    const res = await fetch(`posts/${file}`);
+    const res = await fetch(`${BASE}posts/${file}`);
     if (!res.ok) throw new Error('Not found');
     const text = await res.text();
     const { body } = parseFrontmatter(text);
@@ -102,7 +104,7 @@ async function init() {
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateThemeIcon);
 
   try {
-    const res = await fetch('posts.json');
+    const res = await fetch(`${BASE}posts.json`);
     posts = await res.json();
   } catch {
     postList.innerHTML = '<p>글 목록을 불러올 수 없습니다.</p>';
