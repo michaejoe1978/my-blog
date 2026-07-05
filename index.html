@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">My Blog</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="다크 모드 전환">
+        <span class="theme-toggle__icon" id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="post-list" id="postList"></section>
+    <article class="post-view" id="postView" hidden>
+      <a href="#" class="post-view__back">&larr; 목록으로</a>
+      <div class="post-view__content" id="postContent"></div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My Blog. Built with Markdown.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

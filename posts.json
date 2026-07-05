@@ -1,0 +1,44 @@
+[
+  {
+    "title": "웹 접근성(Web Accessibility) 기초: 모두를 위한 웹 만들기",
+    "date": "2026-07-05",
+    "summary": "시맨틱 마크업, ARIA, 키보드 내비게이션 등 웹 접근성의 핵심 개념을 실제 코드 예제와 함께 정리합니다.",
+    "file": "web-accessibility-basics.md"
+  },
+  {
+    "title": "JavaScript 비동기 프로그래밍: Promise와 async/await 완전 정복",
+    "date": "2026-07-01",
+    "summary": "콜백 지옥부터 Promise, async/await까지 JavaScript 비동기 처리의 흐름을 예제와 함께 단계별로 이해합니다.",
+    "file": "javascript-async-await.md"
+  },
+  {
+    "title": "TypeScript 입문: 타입으로 만드는 더 안전한 JavaScript",
+    "date": "2026-06-30",
+    "summary": "TypeScript의 핵심 타입 시스템을 실제 코드 예제와 함께 정리합니다. 타입 추론, 인터페이스, 제네릭까지 단계별로 알아봅니다.",
+    "file": "typescript-basics.md"
+  },
+  {
+    "title": "CSS Grid 완벽 이해하기",
+    "date": "2026-06-28",
+    "summary": "CSS Grid 레이아웃의 핵심 개념부터 실전 패턴까지, 예제와 함께 단계별로 알아봅니다.",
+    "file": "understanding-css-grid.md"
+  },
+  {
+    "title": "오늘 배운 것",
+    "date": "2026-06-28",
+    "summary": "클로드 코드로 블로그를 만들면서 배운 HTML, CSS, JavaScript의 역할을 정리합니다.",
+    "file": "today-i-learned.md"
+  },
+  {
+    "title": "첫 번째 블로그 글",
+    "date": "2026-06-28",
+    "summary": "정적 블로그 생성기로 작성한 첫 번째 글입니다.",
+    "file": "hello-world.md"
+  },
+  {
+    "title": "마크다운 작성 가이드",
+    "date": "2026-06-27",
+    "summary": "블로그 글을 작성할 때 사용할 수 있는 마크다운 문법을 정리합니다.",
+    "file": "markdown-guide.md"
+  }
+]
