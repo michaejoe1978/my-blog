@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>픽셀 아트 에디터</title>
-  <script>if(!location.pathname.endsWith('/'))history.replaceState(null,'',location.pathname+'/');</script>
+  <script>var _p=location.pathname;if(!_p.endsWith('/')&&!_p.split('/').pop().includes('.'))history.replaceState(null,'',_p+'/');</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
