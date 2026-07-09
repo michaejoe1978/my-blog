@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>픽셀 아트 에디터</title>
+  <base href="/apps/pixel-art/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="toolbar">
+      <button class="tool-btn active" data-tool="pen" title="펜 (P)">✏️ 펜</button>
+      <button class="tool-btn" data-tool="eraser" title="지우개 (E)">🧹 지우개</button>
+      <button class="tool-btn" data-tool="fill" title="채우기 (F)">🪣 채우기</button>
+      <button class="tool-btn" data-tool="eyedropper" title="스포이드 (I)">💉 스포이드</button>
+      <div class="toolbar-divider"></div>
+      <button class="tool-btn" id="clear-btn" title="전체 지우기">🗑️ 전체지우기</button>
+    </div>
+
+    <div id="main">
+      <div id="canvas-wrapper">
+        <div id="pixel-canvas"></div>
+      </div>
+
+      <div id="sidebar">
+        <div class="sidebar-section">
+          <div class="section-label">현재 색상</div>
+          <div id="current-color-preview"></div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="section-label">팔레트</div>
+          <div id="palette"></div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="section-label">커스텀 색상</div>
+          <input type="color" id="color-picker" value="#000000">
+        </div>
+
+        <div class="sidebar-section">
+          <div class="section-label">최근 색상</div>
+          <div id="recent-colors"></div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="section-label">PNG 저장</div>
+          <div class="export-row">
+            <label for="export-scale">배율:</label>
+            <select id="export-scale">
+              <option value="1">1× (16px)</option>
+              <option value="8" selected>8× (128px)</option>
+              <option value="16">16× (256px)</option>
+              <option value="32">32× (512px)</option>
+            </select>
+          </div>
+          <button id="export-btn">💾 PNG 저장</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="statusbar">
+      <span id="status-tool">도구: 펜</span>
+      <span class="status-divider">|</span>
+      <span id="status-coord">좌표: -</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
